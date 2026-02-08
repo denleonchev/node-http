@@ -4,7 +4,8 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "server:dev": "node --inspect --watch src/server.ts",
+    "server:dev": "node --inspect --inspect-port=9400 --watch src/server.ts",
+    "client:dev": "node --inspect --inspect-port=9410 src/client.ts",
     "format": "prettier --write --ignore-unknown",
     "lint": "eslint --cache --fix",
     "prepare": "husky"
