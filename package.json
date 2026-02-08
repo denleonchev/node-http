@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/index.ts",
   "scripts": {
-    "dev": "node --inspect src/index.ts",
+    "server:dev": "node --inspect --watch src/server.ts",
     "format": "prettier --write --ignore-unknown",
     "lint": "eslint --cache --fix",
     "prepare": "husky"
